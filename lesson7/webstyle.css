@@ -1,0 +1,111 @@
+.top {
+  background-color: #3e9292;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 0px;
+  font: inherit;
+  height: 56px;
+}
+.left {
+  background-color: rgb(255, 0, 2055);
+  /* flex: 1; */
+  width: 120px;
+  height: 100%;
+  display: flex;
+  position: fixed;
+}
+.right {
+  background-color: rgb(100, 108, 155);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding-top: 56px;
+  padding-left: 120px;
+}
+.main {
+  display: flex;
+  height: 95vh;
+}
+.top1 {
+  background-color: rgb(5, 77, 5);
+  color: white;
+  border-radius: 10px;
+  padding: 15px 2px;
+}
+.Videos {
+  display: flex;
+  flex: 20;
+  padding: 8px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 16px;
+  right: 120px;
+}
+.filter {
+  background-color: gray;
+  flex: 1;
+  text-align: center;
+}
+.videocss {
+  background-color: azure;
+
+  width: 30%;
+  padding: 5px;
+
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  flex-wrap: wrap;
+  top: 100px;
+}
+
+.videocss > img {
+  display: flex;
+  width: 100%;
+  object-fit: cover;
+}
+.box {
+  background-color: red;
+  margin: 5px;
+}
+.small {
+  background-color: orange;
+  display: flex;
+  flex: 1;
+}
+.smallvideo {
+  background-color: red;
+  display: flex;
+  align-items: center;
+}
+
+.smallvideo > img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+.smallvideo > p {
+  background-color: blue;
+  flex: 1;
+}
+
+.descriptioncss {
+  display: flex;
+  flex: 3;
+  border: solid;
+  border-width: 3%;
+  border-color: orange;
+  background-color: aliceblue;
+  text-wrap: wrap;
+}
+body {
+  margin: 0;
+}
+.filter {
+  display: flex;
+  justify-content: space-around;
+  color: aliceblue;
+}
