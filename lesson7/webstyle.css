@@ -1,39 +1,45 @@
 .top {
-  background-color: #3e9292;
+  background-color: white;
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
   position: fixed;
   top: 0px;
+  gap: 50px;
   font: inherit;
   height: 56px;
+  justify-content: space-between;
+}
+.top1 {
+  /* background-color: rgb(5, 77, 5);*/
+  color: rgb(22, 7, 7);
+  border-radius: 10px;
+  padding: 15px 2px;
 }
 .left {
-  background-color: rgb(255, 0, 2055);
-  /* flex: 1; */
+  /*background-color: rgb(255, 0, 2055);*/
+  margin-top: 88px;
   width: 120px;
   height: 100%;
   display: flex;
   position: fixed;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.sub {
+  color: black;
+  display: flex;
+  align-items: center;
 }
 .right {
-  background-color: rgb(100, 108, 155);
+  /*background-color: rgb(100, 108, 155);*/
   display: flex;
   flex: 1;
   flex-direction: column;
   padding-top: 56px;
   padding-left: 120px;
 }
-.main {
-  display: flex;
-  height: 95vh;
-}
-.top1 {
-  background-color: rgb(5, 77, 5);
-  color: white;
-  border-radius: 10px;
-  padding: 15px 2px;
-}
+
 .Videos {
   display: flex;
   flex: 20;
@@ -41,19 +47,12 @@
   flex-wrap: wrap;
   flex-direction: row;
   gap: 16px;
-  right: 120px;
-}
-.filter {
-  background-color: gray;
-  flex: 1;
-  text-align: center;
+  padding-top: 30px;
 }
 .videocss {
-  background-color: azure;
-
+  /* background-color: azure;*/
   width: 30%;
   padding: 5px;
-
   display: flex;
   flex-direction: column;
   /* align-items: center; */
@@ -66,18 +65,37 @@
   display: flex;
   width: 100%;
   object-fit: cover;
+  border-radius: 5%;
 }
+.filter {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  padding-left: 15px 2px;
+  justify-content: space-around;
+}
+.filtertext {
+  background-color: #f2f2f2;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  color: black;
+  line-height: 2rem;
+  font-weight: 500;
+  border-radius: 5px;
+  padding-inline: 8px;
+}
+
 .box {
-  background-color: red;
+  background-color: hsl(0, 24%, 94%);
   margin: 5px;
 }
 .small {
-  background-color: orange;
+  /*background-color: hsl(36, 19%, 95%);*/
   display: flex;
   flex: 1;
 }
 .smallvideo {
-  background-color: red;
   display: flex;
   align-items: center;
 }
@@ -88,24 +106,27 @@
   border-radius: 50%;
 }
 .smallvideo > p {
-  background-color: blue;
+  /*background-color: hsl(240, 2%, 82%);*/
   flex: 1;
 }
 
 .descriptioncss {
   display: flex;
   flex: 3;
-  border: solid;
-  border-width: 3%;
-  border-color: orange;
-  background-color: aliceblue;
   text-wrap: wrap;
 }
+
 body {
   margin: 0;
 }
-.filter {
-  display: flex;
-  justify-content: space-around;
-  color: aliceblue;
+.sub:hover {
+  background-color: aqua;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.3s;
+}
+.filtertext:hover {
+  background-color: gray;
+  border-radius: 10px;
+  transition: 0.3s;
 }
