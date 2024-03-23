@@ -118,6 +118,8 @@
 
 body {
   margin: 0;
+  font-family: "Roboto", sans-serif;
+  transition: 0.3s;
 }
 .sub:hover {
   background-color: aqua;
@@ -129,4 +131,32 @@ body {
   background-color: gray;
   border-radius: 10px;
   transition: 0.3s;
+}
+/* Tablet */
+@media screen and (min-width: 481px) and(max-width:768px) {
+}
+
+/* 320px — 480px: Mobile devices */
+@media screen and (max-width: 480px) {
+}
+/* 481px — 768px: iPads, Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+/* 769px — 1200px: Small screens, laptops */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+}
+
+/* 1201px and more —  Extra large screens, Desktop */
+@media screen and (min-width: 1201px) and (max-width: 1312px) {
+  main .left {
+    width: 72px;
+    background-color: blue;
+    padding-left: 0;
+  }
+  main .left p {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+  }
 }
