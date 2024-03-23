@@ -1,9 +1,10 @@
 /* Tablet */
-@media screen and (min-width: 320px) and (max-width: 1315px) {
+@media screen and (max-width: 1315px) {
   main .left {
     width: 72px;
     background-color: blue;
     padding-left: 0;
+    transition: 0.3px;
   }
   main .right {
     padding-left: 84px;
